@@ -1,5 +1,7 @@
 package Assignment1;
 
+import java.util.Arrays;
+
 public class Prog3 {
     public static void main(String[] args) {
         String records = "231A,Light Bulb,123,Wilco,1.75:"+
@@ -27,17 +29,12 @@ public class Prog3 {
                 "933W,Cat Toy,15,Wilco,2.35:" +
                 "215A,Hair Ball,0,Little Jimmy,0.00:";
 
-              String[] splitedRecords = records.split(":");
+              String[] splittedRecords = records.split(":");
 
-              StringBuilder ID = new StringBuilder();
-
-              for(String x : splitedRecords) {
+              for(String x : splittedRecords) {
                  String[] individualItem = x.split(",");
-
-                  if(!ID.isEmpty()) {  ID.append("\n"); }
-                   ID.append(individualItem[0]);
+                 System.out.println(individualItem[0]);
               }
-
-              System.out.println(ID.toString());
+              
     }
 }

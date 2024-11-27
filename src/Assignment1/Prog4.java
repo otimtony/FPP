@@ -7,7 +7,7 @@ public class Prog4 {
     public static void main(String[] args) {
      String[] inputArray =   {"horse","cat","tiger", "dog", "cat", "horse", "dog", "dog", "cat"};
 
-     StringBuilder uniqueString = new StringBuilder();
+        StringBuilder uniqueString = new StringBuilder();
 
         for (int i = 0; i < inputArray.length; i++) {
             boolean isDuplicate  = false;
@@ -26,9 +26,7 @@ public class Prog4 {
         }
 
         String[] outputArray = uniqueString.toString().split(",");
-
         System.out.println(java.util.Arrays.toString(outputArray));
-
     }
 
 }
