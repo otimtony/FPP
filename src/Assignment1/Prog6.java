@@ -7,6 +7,7 @@ public class Prog6 {
 
     public static void secondMin(int[] a) {
 
+        //check if array is empty or less than 2 elements
         if (a == null || a.length < 2) {
             System.out.println("Array must have at least two elements");
         }

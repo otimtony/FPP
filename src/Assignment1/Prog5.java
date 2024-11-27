@@ -13,13 +13,15 @@ public class Prog5 {
         System.out.println(Arrays.toString(result));
     }
     public static int[] combine(int[] a, int[] b) {
-
+        //Array to hold both arrays
         int[] combinedArray = new int[a.length + b.length];
 
+        //Add elements from array a into the new array
         for (int i = 0; i < a.length; i++) {
             combinedArray[i] = a[i];
         }
 
+        //Add elements from array b into the new array
         for (int i = 0; i < b.length; i++) {
             combinedArray[a.length + i] = b[i];
         }
