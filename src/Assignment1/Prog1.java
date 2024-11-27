@@ -26,7 +26,9 @@ public class Prog1 {
         double yToThePowerPi = Math.pow(y, piValue);
 
         // Print the result of yToThePowerPi
-        System.out.printf(y + " raised to the power of π : " + yToThePowerPi);
+        System.out.printf("%d^π = %.2f\n", y, yToThePowerPi);
+
+
 
     }
 }
