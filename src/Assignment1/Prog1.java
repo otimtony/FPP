@@ -16,7 +16,8 @@ public class Prog1 {
         double piToThePowerX = Math.pow(piValue, x);
 
         // Print the result of piToThePowerX
-        System.out.printf("π raised to the power of " + x + " : " + piToThePowerX + "\n");
+        System.out.printf("π^%d = %.2f\n", x, piToThePowerX);
+//        System.out.printf("π raised to the power of " + x + " : %.2f\n" + piToThePowerX + "\n");
 
         // Get a random integer x in the range 1..9
         int y = rg.nextInt(3,14);
