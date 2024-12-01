@@ -1,4 +1,4 @@
-package Assignment2;
+package Lesson3.Question5;
 
 
 public class Prog5 {
