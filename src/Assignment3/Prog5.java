@@ -3,7 +3,7 @@ package Assignment3;
 public class Prog5 {
 
     public static void main(String[] args) {
-        int[] arr = {1};
+        int[] arr = {1, 3, 5, 7, 9, 13, 15};
 
         System.out.println(findMaxFromTheArrayHandler(arr));
     }
@@ -18,13 +18,10 @@ public class Prog5 {
     }
 
     private static int findMaxFromTheArray(int[] inputArr, int index, int max) {
-        if(inputArr.length == 1){
-            return inputArr[0];
-        }
+        if(inputArr.length == 1) return inputArr[0];
 
-        if(index == inputArr.length){
-            return max;
-        }
+        if(index == inputArr.length) return max;
+
         return findMaxFromTheArray(inputArr, index + 1, Math.max(inputArr[index], max));
     }
 }

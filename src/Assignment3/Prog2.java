@@ -5,7 +5,7 @@ public class Prog2 {
     public static void main(String[] args) {
         String str = "zXyZ";
 
-        System.out.println(findMinCharacter(str, 0, 'z'));
+        System.out.println(findMinCharacterHandler(str));
     }
 
     public static Character findMinCharacterHandler(String str) {
