@@ -1,24 +1,8 @@
 package Lesson3.Question5;
 
 
-public class Prog5 {
-    public static void main(String[] args) {
-        Pizza pizza1 = new Pizza(PizzaSize.SMALL, PizzaType.VEGGIE,2);
-        Pizza pizza2 = new Pizza(PizzaSize.MEDIUM, PizzaType.PEPPERONI,1);
-        Pizza pizza3 = new Pizza(PizzaSize.LARGE, PizzaType.BBQCHICKEN,2);
-        System.out.println(pizza1.printOrderSummary());
-        System.out.println(pizza2.printOrderSummary());
-        System.out.println(pizza3.printOrderSummary());
-    }
-}
 
-enum PizzaSize {
-    SMALL, MEDIUM, LARGE
-}
 
-enum PizzaType {
-    VEGGIE, PEPPERONI, CHEESE, BBQCHICKEN
-}
 
 class Pizza {
     private PizzaSize size;
@@ -59,19 +43,17 @@ class Pizza {
     }
 
 
-
-
     public String printOrderSummary() {
 
 
         return String.format(
-                 "Pizza Order:%n" +
-                 "Size: %s%n" +
-                 "Qty: %d%n" +
-                 "Type: %s%n" +
-                  "Price: $%.2f%n" +
-                 "Tax: $%.2f%n" +
-                 "Total Price: $%.2f",
+                "Pizza Order:%n" +
+                        "Size: %s%n" +
+                        "Qty: %d%n" +
+                        "Type: %s%n" +
+                        "Price: $%.2f%n" +
+                        "Tax: $%.2f%n" +
+                        "Total Price: $%.2f",
                 this.size,
                 this.quantity,
                 this.type,
