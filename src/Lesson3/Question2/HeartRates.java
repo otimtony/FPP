@@ -1,48 +1,11 @@
-package Assignment2;
+package Lesson3.Question2;
 
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeParseException;
-import java.util.Scanner;
-
-public class Prog2 {
-    public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Your First Name: ");
-        String firstName = sc.nextLine();
-        System.out.println("Enter Your Last Name: ");
-        String lastName = sc.nextLine();
-
-        String dateOfBirth = null;
-
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-M-d");
-
-
-        while (dateOfBirth == null) {
-            System.out.println("Enter Your Date Of Birth in the format yyyy-MM-dd: ");
-            String input = sc.nextLine().trim();
-            try {
-                LocalDate parsedDate = LocalDate.parse(input, formatter);
-                if (parsedDate.isBefore(LocalDate.now())) {
-                    dateOfBirth = input;
-                } else {
-                    System.out.println("Date of birth must be before today's date. Please try again.");
-                }
-            } catch (DateTimeParseException e) {
-                System.out.println("Invalid date format. Please use yyyy-MM-dd.");
-            }
-        }
-
-        HeartRates hr = new HeartRates(firstName, lastName, dateOfBirth);
-        System.out.println("Your target heart rate is between " + hr.getLowerBoundaryTargetHeartRate() + "and" + hr.getUpperBoundaryTargetHeartRate());
-        System.out.println(hr.getPersonsDetails());
-
-    }
-}
 
 class HeartRates {
+
 
     private String firstName;
     private String lastName;
@@ -51,21 +14,17 @@ class HeartRates {
     private static final double UB = 0.85;
     private final int RHR = 70;
 
+
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-M-d");
 
-
     HeartRates(String firstName, String lastName, String dateOfBirth) {
-
-        if (firstName.trim().isEmpty() || lastName.trim().isEmpty() || dateOfBirth.isEmpty()) {
-            throw new IllegalArgumentException("Invalid inputs");
-
-        }
         this.firstName = firstName;
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
     }
 
 
+    //  getters and setters
     public String getFirstName() {
         return firstName;
     }
@@ -95,11 +54,11 @@ class HeartRates {
     }
 
     public int getMaximumHeartRate() {
-        return 220 - this.getAge();
+        return 220 - getAge();
     }
 
     public int getAverageHeartRate() {
-        return getMaximumHeartRate() - this.RHR;
+        return getMaximumHeartRate() - RHR;
     }
 
 
@@ -112,9 +71,10 @@ class HeartRates {
     }
 
 
+    //  Utility function to calculate duration in years
     private int getYrsDiffFromToday(String date) {
         LocalDate today = LocalDate.now();
-        LocalDate birthDate = LocalDate.parse(date, this.formatter);
+        LocalDate birthDate = LocalDate.parse(date, formatter);
         return Period.between(birthDate, today).getYears();
     }
 

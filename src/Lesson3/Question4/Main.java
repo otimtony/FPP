@@ -1,8 +1,8 @@
-package Assignment2;
+package Lesson3.Question4;
 
 import java.util.Scanner;
 
-public class Prog4 {
+public class Main {
 
     public static void main(String[] args) {
 
@@ -56,33 +56,8 @@ public class Prog4 {
     }
 }
 
-record Circle(double r) {
 
-    public double getArea() {
-        return Math.PI * r * r;
-    }
 
-}
 
-record Triangle(double base, double height) {
 
-    public double getArea() {
-        return (base * height) / 2;
-    }
 
-}
-
-final class Rectangle {
-
-    private final double width;
-    private final double height;
-
-    Rectangle(double width, double height) {
-        this.width = width;
-        this.height = height;
-    }
-
-    public double getArea() {
-        return width * height;
-    }
-}
