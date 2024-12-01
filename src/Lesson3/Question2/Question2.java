@@ -1,4 +1,4 @@
-package Assignment2.Question2;
+package Lesson3.Question2;
 
 import java.time.LocalDate;
 import java.time.Period;

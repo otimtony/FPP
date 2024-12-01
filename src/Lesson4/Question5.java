@@ -1,6 +1,6 @@
-package Assignment3;
+package Lesson4;
 
-public class Prog5 {
+public class Question5 {
 
     public static void main(String[] args) {
         int[] arr = {1, 3, 5, 7, 9, 13, 15};

@@ -1,8 +1,8 @@
-package Assignment3;
+package Lesson4;
 
 import java.util.Arrays;
 
-public class Prog3 {
+public class Question3 {
     public static void main(String[] args) {
       int[] input = {1, 3, 5, 7, 9, 13, 15};
         System.out.println(Arrays.toString(reverseArrayHandler(input)));

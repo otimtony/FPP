@@ -1,6 +1,6 @@
-package Assignment3;
+package Lesson4;
 
-public class Prog2 {
+public class Question2 {
 
     public static void main(String[] args) {
         String str = "zXyZ";

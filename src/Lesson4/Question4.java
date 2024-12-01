@@ -1,6 +1,6 @@
-package Assignment3;
+package Lesson4;
 
-public class prog4 {
+public class Question4 {
     public static void main(String[] args) {
         System.out.println(isPalindromeHandler(121));
 
