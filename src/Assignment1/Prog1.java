@@ -21,7 +21,7 @@ public class Prog1 {
         int y = rg.nextInt(3,14);
 
         //Get value of π to the power x
-        double yToThePowerPi = Math.pow(y, piValue);
+        double yToThePowerPi = Math.pow(y, piValue); 
         System.out.printf("%d raised to the power of π : %.2f\n", y, yToThePowerPi);
 
     }
