@@ -1,6 +1,5 @@
 package Lesson3.Question5;
 
-
 public class Main {
     public static void main(String[] args) {
         Pizza pizza1 = new Pizza(PizzaSize.SMALL, PizzaType.VEGGIE,2);
