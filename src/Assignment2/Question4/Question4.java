@@ -1,8 +1,8 @@
-package Assignment2;
+package Assignment2.Question4;
 
 import java.util.Scanner;
 
-public class Prog4 {
+public class Question4 {
 
     public static void main(String[] args) {
 

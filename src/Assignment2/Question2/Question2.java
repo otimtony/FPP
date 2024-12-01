@@ -1,4 +1,4 @@
-package Assignment2;
+package Assignment2.Question2;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.Scanner;
 
-public class Prog2 {
+public class Question2 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
