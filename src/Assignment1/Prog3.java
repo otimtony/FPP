@@ -29,9 +29,9 @@ public class Prog3 {
                 "933W,Cat Toy,15,Wilco,2.35:" +
                 "215A,Hair Ball,0,Little Jimmy,0.00:";
 
-              String[] splittedRecords = records.split(":");
+              String[] splitRecords = records.split(":");
 
-              for(String x : splittedRecords) {
+              for(String x : splitRecords) {
                  String[] individualItem = x.split(",");
                  System.out.println(individualItem[0]);
               }
