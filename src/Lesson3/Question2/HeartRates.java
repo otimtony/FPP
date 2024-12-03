@@ -73,9 +73,6 @@ class HeartRates {
         return Period.between(birthDate, today).getYears();
     }
 
-    public String getPersonsDetails() {
-        return toString();
-    }
 
     @Override
     public String toString() {

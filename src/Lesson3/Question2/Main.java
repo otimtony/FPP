@@ -52,7 +52,7 @@ public class Main {
 
         HeartRates hr = new HeartRates(firstName, lastName, dateOfBirth);
         System.out.printf("Your target heart rate is between %.2f and %.2f bpm%n", hr.getLowerBoundaryTargetHeartRate(), hr.getUpperBoundaryTargetHeartRate());
-        System.out.println(hr.getPersonsDetails());
+        System.out.println(hr.toString());
 
     }
 }
