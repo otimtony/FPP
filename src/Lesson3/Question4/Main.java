@@ -1,9 +1,6 @@
 package Lesson3.Question4;
-
 import java.util.Scanner;
-
 public class Main {
-
     public static void main(String[] args) {
 
         while (true) {
@@ -14,7 +11,6 @@ public class Main {
                     Enter T for Triangle:
                     """);
             String C = sc.nextLine().trim().toUpperCase();
-
 
             switch (C) {
                 case "C":

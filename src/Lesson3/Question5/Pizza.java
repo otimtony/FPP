@@ -1,16 +1,11 @@
 package Lesson3.Question5;
 
-
-
-
-
 class Pizza {
     private PizzaSize size;
     private PizzaType type;
     private int quantity;
     private double price;
     private double tax;
-
 
     Pizza(PizzaSize size, PizzaType type, int quantity) {
         this.size = size;
@@ -39,12 +34,9 @@ class Pizza {
 
         this.tax = this.price * 0.03;
 
-
     }
 
-
     public String printOrderSummary() {
-
 
         return String.format(
                 "Pizza Order:%n" +

@@ -1,9 +1,9 @@
-package Lesson4;
+package Lesson4.Question2;
 
-public class Question2 {
+public class MinCharacter {
 
     public static void main(String[] args) {
-        String str = "zXyZ";
+        String str = "akel";
 
         System.out.println(findMinCharacterHandler(str));
     }
@@ -14,7 +14,6 @@ public class Question2 {
         }
         return findMinCharacter(str, 0, 'z');
     }
-
 
     private static Character findMinCharacter(String str, int pos, Character ch) {
 
