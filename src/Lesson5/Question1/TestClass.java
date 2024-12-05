@@ -5,9 +5,9 @@ public class TestClass {
     public static void main(String[] args) {
         Product cloth1 = new Clothing("shirt", 20, 3, "xyz");
         Product cloth2 = new Clothing("Jacket", 100, 5, "ABC");
-        Product electronics1 = new Electronics("TV", 200, 10, "Lifetime warranty");
+        Product electronics1 = new Electronics("TV", 200, 10, "12 Months");
         Product fur1 = new Furniture("Bed", 400, 35, "Wood");
-        Product electronics2 = new Electronics("Monitor", 150, 5, "Express Warranty");
+        Product electronics2 = new Electronics("Monitor", 150, 5, "6 Months");
 
 
         Product[] productArr = {cloth1, cloth2, electronics1, fur1, electronics2};
