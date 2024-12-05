@@ -1,6 +1,6 @@
 package Lesson5.Question4;
 
-public class BasePlusCommissionEmployee extends CommissionEmployee {
+class BasePlusCommissionEmployee extends CommissionEmployee {
 
     double baseSalary;
 
@@ -12,6 +12,10 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
 
     public double getBaseSalary() {
         return baseSalary;
+    }
+
+    public void setBaseSalary(double baseSalary) {
+        this.baseSalary = baseSalary;
     }
 
     @Override

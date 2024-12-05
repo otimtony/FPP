@@ -9,9 +9,13 @@ public class TestClass {
         Product fur1 = new Furniture("Bed", 400, 35, "Wood");
         Product Electronics2 = new Electronics("Monitor", 150, 5, "Express Warranty");
 
-        Product[] productArr = {cloth1, cloth2, electronics1, fur1, Electronics2};
-        System.out.println(sumProducts(productArr));
 
+        Product[] productArr = {cloth1, cloth2, electronics1, fur1, Electronics2};
+
+        //  sum of all the products
+        System.out.println("Sum of the products is: " + sumProducts(productArr));
+
+        // Loop through the objects and print the status of the objects
         for (Product product : productArr) {
             System.out.println(product.toString());
         }
@@ -21,13 +25,8 @@ public class TestClass {
     public static double sumProducts(Product[] col) {
         double sum = 0;
 
-        for (Product x: col){
-            switch (x) {
-                case Clothing clothing -> sum = sum + clothing.getProductPrice();
-                case Furniture furniture -> sum = sum + furniture.getProductPrice();
-                case Electronics electronics -> sum = sum + electronics.getProductPrice();
-                case Product product -> sum = sum + product.getProductPrice();
-            }
+        for (Product x : col) {
+            sum += x.getProductPrice();
         }
 
         return sum;

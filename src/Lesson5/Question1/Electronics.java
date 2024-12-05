@@ -19,11 +19,17 @@ public class Electronics extends Product {
         return WarrantyCost;
     }
 
+    void setWarranty(String warranty) {
+        this.warranty = warranty;
+    }
+    void setWarrantyCost(double warrantyCost) {
+        this.WarrantyCost = warrantyCost;
+    }
+
     @Override
     public double getProductPrice() {
         return productPrice + WarrantyCost;
     }
-
 
     @Override
     public String toString() {

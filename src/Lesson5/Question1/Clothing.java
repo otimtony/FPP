@@ -24,13 +24,15 @@ public class Clothing extends Product {
         return discountPercentage;
     }
 
+    void setDiscountPercentage(double discountPercentage) {
+        this.discountPercentage = discountPercentage;
+    }
 
 
     @Override
     public double getProductPrice() {
         return productPrice - productPrice * (discountPercentage / 100);
     }
-
 
     @Override
     public String toString() {
