@@ -7,10 +7,10 @@ public class TestClass {
         Product cloth2 = new Clothing("Jacket", 100, 5, "ABC");
         Product electronics1 = new Electronics("TV", 200, 10, "Lifetime warranty");
         Product fur1 = new Furniture("Bed", 400, 35, "Wood");
-        Product Electronics2 = new Electronics("Monitor", 150, 5, "Express Warranty");
+        Product electronics2 = new Electronics("Monitor", 150, 5, "Express Warranty");
 
 
-        Product[] productArr = {cloth1, cloth2, electronics1, fur1, Electronics2};
+        Product[] productArr = {cloth1, cloth2, electronics1, fur1, electronics2};
 
         //  sum of all the products
         System.out.println("Sum of the products is: " + sumProducts(productArr));
@@ -23,8 +23,12 @@ public class TestClass {
 
 
     public static double sumProducts(Product[] col) {
-        double sum = 0;
 
+        if (col == null || col.length == 0) {
+            return 0.0;
+        }
+
+        double sum = 0;
         for (Product x : col) {
             sum += x.getProductPrice();
         }

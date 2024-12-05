@@ -1,6 +1,6 @@
 package Lesson5.Question4;
 
-class BasePlusCommissionEmployee extends CommissionEmployee {
+public class BasePlusCommissionEmployee extends CommissionEmployee {
 
     double baseSalary;
 
@@ -25,15 +25,11 @@ class BasePlusCommissionEmployee extends CommissionEmployee {
 
     @Override
     public String toString() {
-        return "Employee Details:\n" +
-                "First Name: " + super.getFirstName() + "\n" +
-                "Last Name: " + super.getLastName() + "\n" +
-                "Social Security Number: " + super.getSocialSecurityNumber() + "\n" +
-                "base Salary: " + getBaseSalary() + "\n" +
-                "Gross Sales: " + getGrossSales() + "\n" +
-                "Commission Rate: " + getCommissionRate() + "\n" +
-                "Salary: " + getPayment() + "\n";
+        return "[" + super.getFirstName() + ", " + super.getLastName() + ", SSN: " + super.getSocialSecurityNumber() +
+                ", Base Salary: $" + getBaseSalary() + ", Gross Sales: $" + getGrossSales() +
+                ", Commission Rate: " + getCommissionRate() + "%, Salary: $" + getPayment() + "]";
     }
+
 
 
 }

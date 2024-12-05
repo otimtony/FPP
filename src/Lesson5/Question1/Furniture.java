@@ -34,12 +34,7 @@ public class Furniture extends Product {
 
     @Override
     public String toString() {
-        return "Product Details:\n" +
-                "Product Name: " + super.getProductName() + "\n" +
-                "Product Price: $" + getProductPrice() + "\n" +
-                "Material: " + getMaterial() +
-                "Shipping Cost: $ " + getShippingCost() + "\n";
-
+        return "[" + getProductName() + ", $" + getProductPrice() + ", " + material + ", Shipping Cost: $" + shippingCost + "]";
     }
 
 

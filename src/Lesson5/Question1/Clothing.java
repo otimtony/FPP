@@ -35,12 +35,8 @@ public class Clothing extends Product {
     }
 
     @Override
-    public String toString() {
-        return "Product Details:\n" +
-                "Product Name: " + super.getProductName() + "\n" +
-                "Product Price: $" + getProductPrice() + "\n" +
-                "Brand: " + getBrand()  +  "\n" +
-                "Discount Percentage: " + getDiscountPercentage() + "%" +"\n";
 
+    public String toString() {
+        return "[" + getProductName() + ", $" + getProductPrice() + ", " + brand + ", Discount: " + discountPercentage + "%]";
     }
 }

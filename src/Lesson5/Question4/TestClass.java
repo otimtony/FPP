@@ -17,19 +17,25 @@ public class TestClass {
 
 
     public static Employee findMaxSalary(Employee[] col) {
-
-        if (col.length == 0) {
-            throw new IllegalArgumentException("invalid employee array");
+        if (col == null || col.length == 0) {
+            throw new IllegalArgumentException("Invalid employee array");
         }
 
-        Employee maxSalaryEmployee = col[0];
+        Employee maxSalaryEmployee = null;
 
         for (Employee employee : col) {
-            if (employee.getPayment() > maxSalaryEmployee.getPayment()) {
-                maxSalaryEmployee = employee;
+            if (employee != null) {
+                if (maxSalaryEmployee == null || employee.getPayment() > maxSalaryEmployee.getPayment()) {
+                    maxSalaryEmployee = employee;
+                }
             }
+        }
+
+        if (maxSalaryEmployee == null) {
+            throw new IllegalStateException("No valid employees found");
         }
 
         return maxSalaryEmployee;
     }
+
 }

@@ -3,11 +3,11 @@ package Lesson5.Question1;
 public class Electronics extends Product {
 
     private String warranty;
-    private double WarrantyCost;
+    private double warrantyCost;
 
     Electronics(String productName, double productPrice, double warrantyCost, String warranty) {
         super(productName, productPrice);
-        this.WarrantyCost = warrantyCost;
+        this.warrantyCost = warrantyCost;
         this.warranty = warranty;
     }
 
@@ -16,28 +16,24 @@ public class Electronics extends Product {
     }
 
     double getWarrantyCost() {
-        return WarrantyCost;
+        return warrantyCost;
     }
 
     void setWarranty(String warranty) {
         this.warranty = warranty;
     }
+
     void setWarrantyCost(double warrantyCost) {
-        this.WarrantyCost = warrantyCost;
+        this.warrantyCost = warrantyCost;
     }
 
     @Override
     public double getProductPrice() {
-        return productPrice + WarrantyCost;
+        return productPrice + warrantyCost;
     }
 
     @Override
     public String toString() {
-        return "Product Details:\n" +
-                "Product Name: " + super.getProductName() + "\n" +
-                "Product Price: $" + getProductPrice() + "\n" +
-                "Warranty: " + getWarranty()  + "\n" +
-                "Warranty Const: $" + getWarrantyCost() + "\n";
-
+        return "[" + getProductName() + ", $" + getProductPrice() + ", " + warranty + ", Warranty Cost: $" + warrantyCost + "]";
     }
 }
