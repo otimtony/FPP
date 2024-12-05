@@ -17,7 +17,11 @@ public class TestClass {
 
         // Loop through the objects and print the status of the objects
         for (Product product : productArr) {
-            System.out.println(product.toString());
+            if (product != null) {
+                System.out.println(product.toString());
+            } else {
+                System.out.println("Null product encountered");
+            }
         }
     }
 
@@ -30,7 +34,9 @@ public class TestClass {
 
         double sum = 0;
         for (Product x : col) {
-            sum += x.getProductPrice();
+            if (x != null) {
+                sum += x.getProductPrice();
+            }
         }
 
         return sum;
