@@ -34,6 +34,6 @@ public class Electronics extends Product {
 
     @Override
     public String toString() {
-        return "[" + getProductName() + ", $" + getProductPrice() + ", " + "Warranty Type: " + warranty + ", Warranty Cost: $" + warrantyCost + "]";
+        return "[" + getProductName() + ", $" + getProductPrice() + ", " + "Warranty Type: " + getWarranty() + ", Warranty Cost: $" + getWarrantyCost() + "]";
     }
 }

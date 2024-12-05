@@ -37,6 +37,6 @@ public class Clothing extends Product {
     @Override
 
     public String toString() {
-        return "[" + getProductName() + ", $" + getProductPrice() + ", " + "Brand: " + brand + ", Discount: " + discountPercentage + "%]";
+        return "[" + getProductName() + ", $" + getProductPrice() + ", " + "Brand: " + getBrand() + ", Discount: " + getDiscountPercentage() + "%]";
     }
 }
