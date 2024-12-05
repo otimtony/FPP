@@ -9,12 +9,10 @@ public class TestClass {
         Employee salariedEmployee = new SalariedEmployee("John", "Smith", "004x", 1500);
         Employee basePlusCommissionEmployee2 = new BasePlusCommissionEmployee("David", "Lee", "005x", 6500, 9, 1100);
 
+        Employee[] employeeArr = {commissionEmployee, basePlusCommissionEmployee, hourlyEmployee, salariedEmployee, basePlusCommissionEmployee2};
 
-        System.out.println(basePlusCommissionEmployee2 instanceof SalariedEmployee);
-//        Employee[] employeeArr = {commissionEmployee, basePlusCommissionEmployee, hourlyEmployee, salariedEmployee, basePlusCommissionEmployee2};
-//
-//        Employee maxSalariedEmployee = findMaxSalary(employeeArr);
-//        System.out.println("Maximum Salaried employee: \n" + maxSalariedEmployee.toString());
+        Employee maxSalariedEmployee = findMaxSalary(employeeArr);
+        System.out.println("Maximum Salaried employee: \n" + maxSalariedEmployee.toString());
     }
 
 
