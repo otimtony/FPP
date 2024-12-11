@@ -76,14 +76,10 @@ class HeartRates {
 
     @Override
     public String toString() {
-
-        return "Person Details:\n" +
-                "First Name: " + getFirstName() + "\n" +
-                "Last Name: " + getLastName() + "\n" +
-                "Date of Birth: " + getDateOfBirth() + "\n" +
-                "Age: " + getAge() + " years\n" +
-                "Maximum Heart Rate (MHR): " + getMaximumHeartRate() + " bpm";
-
+        return "[First Name: " + getFirstName() + ", Last Name: " + getLastName() +
+                ", Date of Birth: " + getDateOfBirth() + ", Age: " + getAge() + " years" +
+                ", Maximum Heart Rate (MHR): " + getMaximumHeartRate() + " bpm]";
     }
+
 
 }

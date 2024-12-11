@@ -23,6 +23,9 @@ public class Clothing extends Product {
         return discountPercentage;
     }
 
+    void setDiscountPercentage(double discountPercentage) {
+        this.discountPercentage = discountPercentage;
+    }
 
 
     @Override
@@ -30,14 +33,9 @@ public class Clothing extends Product {
         return productPrice - productPrice * (discountPercentage / 100);
     }
 
-
     @Override
-    public String toString() {
-        return "Product Details:\n" +
-                "Product Name: " + super.getProductName() + "\n" +
-                "Product Price: $" + getProductPrice() + "\n" +
-                "Brand: " + getBrand()  +  "\n" +
-                "Discount Percentage: " + getDiscountPercentage() + "%" +"\n";
 
+    public String toString() {
+        return "[" + getProductName() + ", $" + getProductPrice() + ", " + "Brand: " + getBrand() + ", Discount: " + getDiscountPercentage() + "%]";
     }
 }

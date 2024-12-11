@@ -38,12 +38,7 @@ public class HourlyEmployee extends Employee {
 
     @Override
     public String toString() {
-        return "Employee Details:\n" +
-                "First Name: " + super.getFirstName() + "\n" +
-                "Last Name: " + super.getLastName() + "\n" +
-                "Social Security Number: " + super.getSocialSecurityNumber() + "\n" +
-                "hours: " + getHours() + "\n" +
-                "Wage: " + getWage() + "\n" +
-                "Salary: " + getPayment() + "\n";
+        return "[" + super.getFirstName() + ", " + super.getLastName() + ", SSN: " + super.getSocialSecurityNumber() + ", Hours: " + getHours() + ", Wage: $" + getWage() + ", Salary: $" + getPayment() + "]";
     }
+
 }

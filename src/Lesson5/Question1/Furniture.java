@@ -19,6 +19,14 @@ public class Furniture extends Product {
         return shippingCost;
     }
 
+    void setMaterial(String material) {
+        this.material = material;
+    }
+
+    void setShippingCost(double shippingCost) {
+        this.shippingCost = shippingCost;
+    }
+
     @Override
     public double getProductPrice() {
         return productPrice + shippingCost;
@@ -26,12 +34,7 @@ public class Furniture extends Product {
 
     @Override
     public String toString() {
-        return "Product Details:\n" +
-                "Product Name: " + super.getProductName() + "\n" +
-                "Product Price: $" + getProductPrice() + "\n" +
-                "Material: " + getMaterial()  +
-                "Shipping Cost: $ "  + getShippingCost() + "\n";
-
+        return "[" + getProductName() + ", $" + getProductPrice() + ", " + "Material: " + getMaterial() + ", Shipping Cost: $" + getShippingCost() + "]";
     }
 
 
