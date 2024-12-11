@@ -22,6 +22,7 @@ public class ReverseArray {
         }
         int temp = input[startingIndex];
         int temp2 = input[targetIndex];
+
         input[startingIndex] = temp2;
         input[targetIndex] = temp;
         return reverseArray(input, startingIndex + 1, targetIndex - 1);

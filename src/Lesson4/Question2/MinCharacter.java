@@ -27,5 +27,4 @@ public class MinCharacter {
         return findMinCharacter(str, pos + 1, ch);
     }
 
-
 }

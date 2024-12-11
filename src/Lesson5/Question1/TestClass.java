@@ -17,18 +17,17 @@ public class TestClass {
         }
     }
 
-
     public static double sumProducts(Product[] col) {
         double sum = 0;
 
-        for (Product x: col){
-            switch (x) {
-                case Clothing clothing -> sum = sum + clothing.getProductPrice();
-                case Furniture furniture -> sum = sum + furniture.getProductPrice();
-                case Electronics electronics -> sum = sum + electronics.getProductPrice();
-                case Product product -> sum = sum + product.getProductPrice();
-            }
-        }
+//        for (Product x: col){
+//            switch (x) {
+//                case Clothing clothing -> sum = sum + clothing.getProductPrice();
+//                case Furniture furniture -> sum = sum + furniture.getProductPrice();
+//                case Electronics electronics -> sum = sum + electronics.getProductPrice();
+//                case Product product -> sum = sum + product.getProductPrice();
+//            }
+//        }
 
         return sum;
     }

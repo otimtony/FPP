@@ -14,6 +14,7 @@ public class Palindrome {
 
         int lastDigit = num % 10;
         reversedNum = reversedNum * 10 + lastDigit;
+        System.out.println(reversedNum);
 
         return isPalindromeHelper(num / 10, reversedNum, originalNum);
     }

@@ -2,7 +2,6 @@ package Lesson5.Question1;
 
 public class Clothing extends Product {
 
-
     private String brand;
     private double discountPercentage;
 
