@@ -10,25 +10,31 @@ public class ArrayQueueImpl {
 
 
     public int peek() {
-        if (front == -1) throw new RuntimeException("Queue is empty");
+        if (isEmpty()) {
+            System.out.println("Queue is Empty");
+            return -1;
+        }
         return queue[front];
     }
 
     public void enqueue(int item) {
-        if (front == -1) front++;
+        if (isEmpty()) front++;
         if (rare == queue.length - 1) resize();
 
         queue[rare] = item;
         rare++;
     }
 
-    public void dequeue() {
-        if (front == -1) throw new RuntimeException("Queue is empty");
+    public int dequeue() {
+
         if (isEmpty()) {
-            throw new RuntimeException("Queue is empty");
+            System.out.println("Queue is Empty");
+            return -1; // Assuming Queue items will be positive. So for Empty queue I'm returning 0.
         }
+        int item = queue[front];
         queue[front] = 0;
         front++;
+        return item;
     }
 
     public boolean isEmpty() {
