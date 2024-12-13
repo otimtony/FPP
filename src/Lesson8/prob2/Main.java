@@ -32,32 +32,23 @@ public class Main {
         List<EmployeeData> combined = combine(staff, teachers);
 
         //Step 2: pass the combined list to computeSumOfSalaries
-        double salarySum = prob2.Statistics.computeSumOfSalaries(combined);
+        double salarySum = Statistics.computeSumOfSalaries(combined);
         System.out.println(salarySum);
 
     }
 
     //IMPLEMENT
     public static List<EmployeeData> combine(List<Staff> staff, List<Teacher> teachers) {
-        if (staff.isEmpty() && teachers.isEmpty()) {
-            throw new RuntimeException("Null inputs");
+        if (staff.isEmpty() || teachers.isEmpty()) {
+            throw new RuntimeException("Input lists cannot be null");
         }
-
 
         ArrayList<EmployeeData> tempList = new ArrayList<EmployeeData>();
 
-
-        for (int i = 0; i < staff.size(); i++) {
-            tempList.add(i, staff.get(i));
-        }
-
-        for (int j = 0; j < teachers.size(); j++) {
-            tempList.add(j + staff.size(), teachers.get(j));
-        }
+        tempList.addAll(staff);
+        tempList.addAll(teachers);
 
         return tempList;
-
-
     }
 
 }
