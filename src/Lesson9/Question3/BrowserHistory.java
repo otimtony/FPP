@@ -1,4 +1,4 @@
-package Lesson9.Problem3;
+package Lesson9.Question3;
 
 import java.util.Stack;
 

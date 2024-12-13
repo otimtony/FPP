@@ -1,4 +1,4 @@
-package Lesson9.Problem2;
+package Lesson9.Question2;
 
 public class Main {
 

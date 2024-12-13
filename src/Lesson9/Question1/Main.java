@@ -1,7 +1,4 @@
-package Lesson9.Problem1;
-
-import java.util.PriorityQueue;
-import java.util.Queue;
+package Lesson9.Question1;
 
 public class Main {
 
