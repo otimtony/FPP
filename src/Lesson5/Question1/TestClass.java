@@ -9,7 +9,6 @@ public class TestClass {
         Product fur1 = new Furniture("Bed", 400, 35, "Wood");
         Product electronics2 = new Electronics("Monitor", 150, 5, "6 Months");
 
-
         Product[] productArr = {cloth1, cloth2, electronics1, fur1, electronics2};
 
         //  sum of all the products

@@ -13,7 +13,7 @@ public class SensorTest {
         sensors[4] = new TemperatureSensor("Basement", 10);
 
         for (Sensor sensor : sensors) {
-            System.out.println(sensor);
+            System.out.println(sensor.getSensorType());
         }
     }
 

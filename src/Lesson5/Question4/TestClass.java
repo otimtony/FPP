@@ -17,6 +17,7 @@ public class TestClass {
 
 
     public static Employee findMaxSalary(Employee[] col) {
+
         if (col == null || col.length == 0) {
             throw new IllegalArgumentException("Invalid employee array");
         }

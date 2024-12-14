@@ -23,4 +23,8 @@ public abstract class DeptEmployee {
     }
 
     public abstract double computeSalary();
+
+    public String toString(){
+        return "Name: " + name + " Salary: " + salary;
+    }
 }

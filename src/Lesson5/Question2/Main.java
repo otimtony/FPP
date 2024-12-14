@@ -53,6 +53,27 @@ public class Main{
 
         sc.close();
 
+        System.out.println(findEmploy(dept).toString());
+
     }
 
+    public static DeptEmployee findEmploy(DeptEmployee[] deptEmployee){
+
+        if(deptEmployee == null || deptEmployee.length == 0){
+            return null;
+        }
+
+        DeptEmployee deptEmployee1 = null;
+        double maxSalary = 0.0;
+
+        for (DeptEmployee employee: deptEmployee){
+            if(employee.computeSalary() > maxSalary){
+                maxSalary = employee.computeSalary();
+                deptEmployee1 = employee;
+            }
+        }
+
+        return deptEmployee1;
+
+    }
 }
