@@ -65,12 +65,16 @@ public class Library {
         }
     }
 
-    public void getBookDetails(String ISBN){
+    public String getBookDetails(String ISBN){
         Book book = bookCollection.get(ISBN);
         if (book != null) {
-            System.out.println("Book Details: " + book);
+            String response = "Book Details: " + book;
+            System.out.println(response);
+            return response;
         }else {
-            System.out.println("Book with ISBN " + ISBN + " not found");
+            String response = "Book with ISBN " + ISBN + " not found";
+            System.out.println(response);
+            return response;
         }
     }
 
