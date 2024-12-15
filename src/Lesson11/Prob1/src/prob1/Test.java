@@ -1,4 +1,4 @@
-package prob1;
+package Lesson11.Prob1.src.prob1;
 import java.util.*;
 public class Test {
 
@@ -19,14 +19,12 @@ public class Test {
 		boolean[] expectedOutput = {true, false};
 		boolean[] results = new boolean[2];
 		Student s = new Student("Pierre", "Fromage", 2.8, Standing.FRESHMAN);
+
 		Key pierre = new Key("Pierre", "Fromage");
 		Key richard = new Key("Richard", "Fremling");
 		results[0] = (map.get(pierre).equals(s));
 		results[1] = map.containsKey(richard);
 		System.out.println((Arrays.equals(expectedOutput, results) ? "pass" : "fail"));
-		
-		
-
 
 	}
 
