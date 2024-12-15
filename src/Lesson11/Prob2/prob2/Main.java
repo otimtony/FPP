@@ -1,4 +1,4 @@
-package prob1;
+package Lesson11.Prob2.prob2;
 
 import java.util.Arrays;
 import java.util.List;

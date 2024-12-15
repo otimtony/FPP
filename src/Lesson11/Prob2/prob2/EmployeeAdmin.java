@@ -1,7 +1,6 @@
-package prob1;
+package Lesson11.Prob2.prob2;
 
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class EmployeeAdmin {
 	
@@ -12,8 +11,15 @@ public class EmployeeAdmin {
 	In addition, this list of Employees must be sorted by social security number, in ascending order (from numerically smallest to numerically largest).
 	*/
 	public static List<Employee> prepareReport(HashMap<String, Employee> table, List<String> socSecNums) {
-		//IMPLEMENT
-		return null;
+		List<Employee> tempList = new ArrayList<>();
+		Set<String> keys = table.keySet();
+		for(String key: keys) {
+			double salary = table.get(key).getSalary();
+			if(salary > 80000 && socSecNums.contains(key)) tempList.add(table.get(key));
+		}
+
+		Collections.sort(tempList, new EmployeeComparator());
+		return tempList;
 		
 	}
 	
